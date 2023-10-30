@@ -1,7 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-
     --Amarillo: #EAC926;
     --Azul: #03264C;
     --Celeste: #1259c3;
@@ -14,9 +13,16 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
+    font-family: 'Roboto', sans-serif;
 }
-li a{
-    cursor: pointer;
-    color:#000000;
+
+main{
+    margin: auto;
+    width: 90%;
+    }
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
 }

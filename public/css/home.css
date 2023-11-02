@@ -1,204 +1,112 @@
-.home__header{
-    background-color: var(--Amarillo);
-    padding: 2%;
-
-}
-
-.home__body{
+.home__body {
     background-color: var(--Gris-claro);
-    
-}
-
-.home__logo{
-    width: 40%;   
-    display: block;
-     
-}
-
-
-
-
-.fa-magnifying-glass{
-    border:2px solid gray;
-    background-color: white;
-    margin-left: 25px;
-    height: 25px;
-    margin-top: 3px;
-    }
-
-    .fa-hand-holding-dollar #home__compra{
-   font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: lighter;
-   display: inline;
-}
-
-.home__div{
-    text-align: center;
-    margin: 20px 0px 30px 0px;
-    
-}
-
-ul{
-    font-size: 18px;
-    text-align: left;
-}
-
-.home__nav__general{
-    display: none;
-}
-
-#home__hamburguer{
-    background-color: var(--Azul);
-    color: white;
-    width: 50px;
-    padding: 15px 0;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
-    
 
 }
 
-.home__articulos div{
+.home__articulos__detalles {
     background-color: white;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    position: relative;
+    display: flex;
 }
 
-.home__articulos article{
-    margin-top: 10px;
-    
+.home__articulos__nombre {
+    background-color: white;
 }
 
-.home__articulos h3{
+.home__articulos h3 {
     font-size: 24px;
+    color: var(--Gris-oscuro);
+    margin: 10px
 }
 
-.home__articulos p{
-    font-size: 20px;
+.article__precio {
+    font-size: 18px;
     font-weight: 550;
+    width: 30%;
+    margin: 0 auto
 }
 
-.home__articulos d{
+.article__descuento {
     font-size: 16px;
     color: var(--Verde);
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
 }
 
-.home__articulos i{
-    color: var(--Verde);
-    border: 1px solid var(--Verde);
-    border-radius: 50%;
-    padding: 2% 8% 8% 2%;
-}
-.home__articulos h4{
-    font-size: 16px;
-    font-weight: bold;
+.home__articulos section .home__main__article__dos,
+.home__main__article__tres,
+.home__main__article__cuatro {
     display: none;
 }
 
-footer{
-    background-color: white;
-    text-align: center;
-   margin-top: 10px;
-    
+.home__articulos div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -19px;
 }
 
-footer h3{
-    font-size: 20px;
+.home__articulos h4 {
+    font-size: 16px;
     font-weight: bold;
-}
-
-footer p{
-    font-size: 12px;
-    font-weight: lighter;
-}
-
-footer .fa-solid{
-    color: var(--Celeste);
-    margin-bottom: 10px;
-    font-size: 2em;
-}
-
-footer section{
-    margin-bottom: 90px;
+    display: none;
 }
 
 /* Tablet */
 
-@media(min-width: 768px){
-    .home__section{
-        
+@media(min-width: 768px) {
+    .home__articulos article {
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home__articulos h4 {
+        display: block;
+    }
+
+    .home__articulos section {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
-
-.home__logo{
-    width: 35%;
-}
-
-.home__div{
-    width: 30%;
-    align-self: center;
-    width: 90%;
-}
-
-form{
-    width: 30%;
-    align-self: flex-start;
-    margin-top: 10px;
-    
-}
-
-#home__hamburguer{
-    display: none;
-}
-
-.home__nav__general{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 3%;
-    
-}
-
-.home__nav__general ul{
-    
-    font-size: 16px;
-    
-}
-
-.home__nav__general li{
-    margin: 5px 0
-}
-
-.home__articulos article{
-   
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-}
-
-.home__articulos h4{
-    display: block;
-}
-
+    .home__articulos section .home__main__article__dos {
+        display: block;
+        margin: 0px 0px 0px 50px;
     }
+}
 
 /* Desktop */
 
-@media(min-width: 1024px){
-    .home__section,.home__nav__general{
-        max-width: 1024px;
-        
-        margin: auto;
-    }
-    .home__nav__general li{
-        margin: 5px 10px;
-        font-size: 18px;
+@media(min-width: 1024px) {
+
+    .home__articulos section .home__main__article__tres,
+    .home__main__article__cuatro {
+        display: block;
+        margin: 0px 0px 0px 50px;
     }
 
-    
+    .home__articulos {
+        width: 90%;
+        margin: 0 auto
+    }
+
+    .home__articulos section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .article__descuento {
+        margin-left: 30px;
+        text-align: right;
+    }
 }

@@ -1,6 +1,8 @@
 .home__header {
     background-color: var(--Amarillo);
     padding: 2%;
+    
+
   }
   
   .home__header__mobile {
@@ -80,7 +82,7 @@
           width: 100%;
           align-self: center;
           margin-top: 10px;
-          padding: 5%;
+          
          
       }
   
@@ -132,7 +134,7 @@
   
       form {
           width: 100%;
-          padding: 5%;
+          
       }
   
       form input {

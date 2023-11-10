@@ -1,0 +1,75 @@
+
+.fecha{
+    padding: 5%;
+    height: 7vh;
+    border-radius: none;
+}
+.fecha input{
+    border-radius: none;
+}
+
+
+
+.formu{
+    width: 100%                    ;
+}
+
+
+.fieldset{
+    display: block;
+    padding: 10px;
+    height: 90vh;
+    
+}
+
+.Intereses {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    width: 40%;
+    
+    
+
+            
+    
+    
+  }
+.usuario {
+    display: flex;
+    flex-direction: row-reverse;
+align-items: center;
+padding: 10px;
+}
+.Intereses input{    
+    margin: 0 ;
+    
+    
+}
+
+
+#Electro{
+    padding: auto;
+    border: 1px solid red;
+
+}
+.contenor_botones{
+    
+    margin: 20%;
+    display: flex;
+    font-size: 20px;;
+
+
+}
+.contenor_botones button{
+    margin: auto;
+    font-size: 20px;
+    background-color: yellow;
+}
+.perfill{
+    padding: 5%;
+    
+}
+.caja_general{
+    display: block;
+}

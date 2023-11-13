@@ -5,7 +5,10 @@
     border-radius: none;
 }
 .fecha input{
-    border-radius: none;
+    font-size: 128%;
+}
+h3{
+    margin-top: 20px;
 }
 
 
@@ -55,16 +58,19 @@ padding: 10px;
 }
 .contenor_botones{
     
-    margin: 20%;
     display: flex;
-    font-size: 20px;;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 75px;
 
 
 }
 .contenor_botones button{
     margin: auto;
     font-size: 20px;
-    background-color: yellow;
+    background-color: #fff;
+    width: 25%;
+    border-radius: 16px;
 }
 .perfill{
     padding: 5%;
@@ -72,4 +78,59 @@ padding: 10px;
 }
 .caja_general{
     display: block;
+}
+
+.interesgeneral{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.interesgeneral label{
+    width: 0px;
+    margin: 0px;
+}
+@media (min-width: 768px){
+    .fecha input {
+        font-size: 100%;
+    }
+    .contenor_botones{
+    
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 116px;
+    
+    }
+    .cajagenerallogin{position: relative;
+        left: 10%;
+        width: 80%;
+        
+    }
+
+}
+/* DESKTOP */
+@media (min-width: 1024px){
+    .main__section__div p{
+        text-align: center;
+    }
+    .fecha {
+        padding: 5%;
+        height: 7vh;
+        border-radius: none;
+    }
+    .cajagenerallogin {
+        display: flex;
+    align-items: center;
+    width: 30%;
+    position: relative;
+    left: 29%;
+    }
+    .home__section, .home__nav__general {
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 15%;
+    }
+
 }

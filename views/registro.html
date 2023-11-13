@@ -17,7 +17,7 @@
       <div class="home__header__mobile"> <img class="home__logo" src="/img/logo-mercado-liebre.svg" alt="Logo"
           width="100%">
       </div>
-    
+
       <div>
         <form action="">
           <input type="text" placeholder="Buscar productos, marcas" id="search">
@@ -35,26 +35,26 @@
     <section class="home__nav__general">
       <nav class="home__navbar">
         <ul>
-                <li><a href="/ofertas">Ofertas</a></li>
-                <li><a href="/tiendas">Tiendas Oficiales</a></li>
-                <li><a href="/vender">Vender</a></li>
-                <li><a href="/Ayuda">Ayuda</a></li>
-            </ul>
-            </nav>
-            <nav class="home__navbar__icon">
-                <ul>  
-                <li><a href="/registro">Crea tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                <li><a href="/ingresar">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
-                <li><a href="/micompra">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
-             </ul>
+          <li><a href="/ofertas">Ofertas</a></li>
+          <li><a href="/tiendas">Tiendas Oficiales</a></li>
+          <li><a href="/vender">Vender</a></li>
+          <li><a href="/Ayuda">Ayuda</a></li>
+        </ul>
+      </nav>
+      <nav class="home__navbar__icon">
+        <ul>
+          <li><a href="/registro">Crea tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+          <li><a href="/ingresar">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+          <li><a href="/micompra">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
+        </ul>
       </nav>
     </section>
     <div id="home__hamburguer">
       <i class="fas fa-bars"></i>
     </div>
   </header>
-  <option value=""></option>
-
+</body>
+<div class="cajagenerallogin">
   <form action="/registro" method="post">
     <div class="fecha">
       <label>Nombre y Apellido</label>
@@ -86,57 +86,48 @@
         <input type="radio" name="usuario" value="comprador">
       </div>
       <h3> Intereses</h3>
-      <div class="Intereses">
+      <div class="interesgeneral">
+        
 
-        <input type="checkbox" value="Electro" id="Electro">
-        <label for="Electro">Electro</label>
-      </div>
-      <div class="Intereses">
+    <input type="checkbox" name="peliculas"> Electro<br>
 
-        <input type="checkbox" name="Intereses" id="Moda">
-        <label for="Electro">Moda</label>
-      </div>
-      <div class="Intereses">
+    <input type="checkbox" name="deportes"> Moda<br>
 
-        <input type="checkbox" name="Intereses" id="Hogar">
-        <label for="Electro">Hogar</label>
+    <input type="checkbox" name="videojuegos"> Hogar <br>
+    <input type="checkbox" name="videojuegos"> Jugueteria <br>
+    <input type="checkbox" name="videojuegos"> Vida sana <br>
       </div>
-      <div class="Intereses">
 
-        <input type="checkbox" name="Intereses" id="Jugueteria">
-        <label for="Electro">Jugueteria</label>
-      </div>
-      <div class="Intereses">
-
-        <input type="checkbox" name="Intereses" id="Vida sana">
-        <label for="Electro">Vida sana</label>
-      </div>
       <div>
         <h3>seleccione una foto de perfil</h3>
         <label></label>
         <input type="file">
       </div>
     </div>
-    </div>
 
 
 
-    <div class="fecha">
-      <label>Contraseña:</label>
-      <input type="password" name="contrasena" value="" placeholder="Ingrese su contraseña..." required>
-      <label>Repetir Contraseña:</label>
-      <input type="password" name="recontrasena" value="" placeholder="Confirme su contraseña..." required>
-    </div>
-    <div class="contenor_botones">
-      <button type="submit" title="Enviar" name="Enviar">Enviar</button>
-      <button type="reset">Borrar</button>
-    </div>
+
+<div class="fecha">
+  <label>Contraseña:</label>
+  <input type="password" name="contrasena" value="" placeholder="Ingrese su contraseña..." required>
+  <label>Repetir Contraseña:</label>
+  <input type="password" name="recontrasena" value="" placeholder="Confirme su contraseña..." required>
+</div>
+<div class="contenor_botones">
+  <button type="submit" title="Enviar" name="Enviar">Enviar</button>
+  <button type="reset">Borrar</button>
+</div>
 
 
 
-  </form>
+</form>
+</div>
+</div>
 
 
-</body>
+
+
+
 
 </html>

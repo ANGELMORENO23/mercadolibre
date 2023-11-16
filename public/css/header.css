@@ -1,145 +1,168 @@
 .home__header {
-    background-color: var(--Amarillo);
-    padding: 2%;
-    
+  background-color: var(--Amarillo);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-  }
+.home__section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home__header__mobile{
+  width: 50%;
   
-  .home__header__mobile {
-    display: flex;
-  }
+}
+
+.home__logo {
+  width: 90%;
+ 
+}
+
+.home__header__form{
   
-  .home__logo {
-    width: 50%;
-    display: block;
-  }
+  width: 50%;
   
-  form input {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: none;
-  }
+}
+
+form input{
+  padding: 5%;
+  width: 100%;
+}
+
+
+.fa-hand-holding-dollar #home__compra {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  display: inline-block;
   
-  
-  .fa-hand-holding-dollar #home__compra {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
-    display: inline;
-  }
-  
-  .home__header__div {
+}
+
+.home__header__div {
+  text-align: center;
+  margin: 20px 0px 30px 0px;
+  display: flex;
+}
+
+ul {
+  font-size: 18px;
+  text-align: left;
+}
+
+.home__nav__general {
+  display: none;
+}
+
+#home__hamburguer {
+  background-color: var(--Azul);
+  color: white;
+  width: 50px;
+  padding: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+}
+
+/* Tablet */
+
+@media(min-width: 768px) {
+    .home__section {
+
+        display: flex;
+        justify-content: space-between;
+     }
+
+
+    .home__logo {
+        width: 90%;
+    }
+
+ .home__header__div{
+  display: flex;
+ }
+   
+ .home__header__form{
     text-align: center;
-    margin: 20px 0px 30px 0px;
-  }
+ }
+
+    form {
+        width: 100%;
+        align-self: center;
+        margin-top: 10px;
+        padding: 5%;
+       
+    }
+
+    form input{
+        padding: 20px 0px;
+    }
+
+    #home__hamburguer {
+        display: none;
+    }
+
+    .home__nav__general {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+    }
+
+    .home__nav__general ul {
+
+        font-size: 14px;
+        display: flex;
+    }
+
+    .home__nav__general li {
+        margin: 5px 10px
+    }
+
   
-  ul {
-    font-size: 18px;
-    text-align: left;
-  }
-  
-  .home__nav__general {
-    display: none;
-  }
-  
-  #home__hamburguer {
-    background-color: var(--Azul);
-    color: white;
-    width: 50px;
-    padding: 15px 0;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
-  }
-  
-  /* Tablet */
-  
-  @media(min-width: 768px) {
-      .home__section {
-  
-          display: flex;
-          justify-content: space-between;
-       }
-  
-  
-      .home__logo {
-          width: 90%;
-      }
-  
-      .home__div {
-          width: 70%;
-          align-self: center;
-      }
-  
-      .home__div #home__compra {
-          font-size: 14px;
-          font-weight: lighter;
-      }
-  
-      form {
-          width: 100%;
-          align-self: center;
-          margin-top: 10px;
-          
-         
-      }
-  
-      form input{
-          padding: 20px 0px;
-      }
-  
-      #home__hamburguer {
-          display: none;
-      }
-  
-      .home__nav__general {
-  
-          display: flex;
-          justify-content: space-between;
-          margin-top: 3%;
-      }
-  
-      .home__nav__general ul {
-  
-          font-size: 14px;
-          display: flex;
-      }
-  
-      .home__nav__general li {
-          margin: 5px 10px
-      }
-  }
-  
-  /* Desktop */
-  
-  @media(min-width: 1024px) {
-  
-      .home__section,
-      .home__nav__general {
-          max-width: 1024px;
-          display: flex;
-          justify-content: space-between;
-      }
-  
-      .home__nav__general {
-          margin-top: 15px;
-      }
-  
-      .home__nav__general li {
-          margin: 5px 10px;
-          font-size: 18px;
-      }
-  
-      form {
-          width: 100%;
-          
-      }
-  
-      form input {
-          padding: 20px 15px;
-      }
-  
+}
+
+/* Desktop */
+
+@media(min-width: 1024px) {
+
+    .home__section {
+        max-width: 100vw;
+        display: flex;
+        justify-content: space-around
+    }
+
+    .home__nav__general {
+      max-width: 100vw;
+        display: flex;
+        justify-content: space-between; 
+        text-align: center;
+      margin: 15px 0 auto
+    }
+
+    .home__nav__general li {
+        margin: 5px 10px;
+        font-size: 18px;
+    }
+
+    .home__header__form{
+      margin: 0 auto;
+      width: 25%;
       
-  }
+    }
+
+    form {
+        width: 100%;
+        padding: 5%;
+        
+    }
+
+    form input {
+        padding: 20px 15px;
+    }
+
+    
+}

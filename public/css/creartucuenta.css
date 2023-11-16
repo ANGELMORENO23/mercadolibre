@@ -1,7 +1,7 @@
 
 .fecha{
     padding: 5%;
-    height: 7vh;
+    height: 100px;
     border-radius: none;
 }
 .fecha input{
@@ -115,7 +115,7 @@ padding: 10px;
     }
     .fecha {
         padding: 5%;
-        height: 7vh;
+        height: 100px;
         border-radius: none;
     }
     .cajagenerallogin {

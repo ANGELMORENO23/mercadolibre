@@ -97,8 +97,9 @@
         width: 45%;
         padding: auto;
     }
+    
 
-    .home__articulos h4 {
+    .home__articulos:hover h4{
         display: block;
     }
 .articulos__fila-uno, .articulos__fila-dos{
@@ -139,6 +140,9 @@
     .article__descuento {
         margin-left: 30px;
      
+    }
+    .home__articulos:hover h4{
+        display: block;
     }
 
     }

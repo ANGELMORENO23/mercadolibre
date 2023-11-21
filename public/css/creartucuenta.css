@@ -71,6 +71,11 @@ padding: 10px;
     background-color: #fff;
     width: 25%;
     border-radius: 16px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.contenor_botones button:hover{
+    background-color: #0022AA;
 }
 .perfill{
     padding: 5%;
